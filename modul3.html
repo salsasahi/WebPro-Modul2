@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Diri</title>
+</head>
+
+<body>
+  <main> <!-- untuk main content -->
+    <div class="main__profile"> <!-- untuk mapping section profile -->
+      <h1>Profil Pribadi</h1><!-- tag h1 untuk Header 1 -->
+      <!-- table digunakan untuk membuat table, tr digunakan untuk row, th digunakan untuk head table, dan td untuk body column -->
+      <table>
+        <tr> 
+          <th>Foto Profil</th> 
+          <th>Video Perkenalan</th>
+        </tr>
+        <tr>  
+          <td>
+            <!-- tag img untuk menampilkan image/gambar -->
+            <img src= "asahi.jpg" alt="" width="300" height="250" style="top: 0;">
+          </td>
+          <td>
+            <!-- tag video digunakan untuk menampilkan vider dan source digunakan untuk source konten dan tipe file yang akan dimuat -->
+            <video width="420" height="250" controls> // untuk menampilkan video
+              <source src="orenji.mp4" type="video/mp4"> //untuk source dari content video dan type filenya
+            </video>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="main__about-me">
+      <h2>Tentang Saya</h2> <!-- tag h2 sebagai sub header -->
+      <p>Hamada Asahi atau yang biasa disebut Asahi adalah seorang musisi asal Jepang yang berkarir di Korea sebagai leader grup bernama Treasure.</p> <!-- content atau paragraf -->
+    </div>
+    <div class="main__skills">
+      <h2>Keterampilan</h2> 
+      <table> 
+        <tr>
+          <th>Keterampilan</th>
+          <th>Tingkat</th>
+        </tr>
+        <tr>
+          <td>Menulis lagu</td>
+          <td>Mahir</td>
+        </tr>
+        <tr>
+          <td>Menyanyi</td>
+          <td>Mahir</td>
+        </tr>
+        <tr>
+          <td>Dance</td>
+          <td>Menengah</td>
+        </tr>
+      </table>
+    </div>
+    <div class="main__contact-me">
+      <h2>Hubungi Saya</h2>
+      <!-- form digunakan untuk formulir yang dimana biasanya untuk send data ke backend dengan method post  -->
+      <form method="POST">
+        <p>Nama: <input type="text" name="name"></p>
+        <p>Email: <input type="text" name="email"></p>
+        <p>Pesan:</p>
+        <textarea name="message" id=""></textarea> <!-- tag texarea digunakan untuk text area yang dimana untuk menulis konten yang lebih banyak atau lebar -->
+        <br> <!-- tag br digunakan untuk break atau enter -->
+        <button type="submit">Kiri Pesan</button> <!-- tag button digunakan untuk tombol yang diana dengan type submit untuk trigger dari pengiriman data dari form -->
+      </form>
+    </div>
+    <div class="main__media-sosial">
+      <h2>Media Sosial:</h2>
+      <!-- tag a digunakan untk link ke page atau web lain -->
+      <a href="https://linkedin.com/in/zahwasaljhoahmad">LinkedIn</a> &shortmid;
+      <a href="https://github.com/salsasahi">Github</a> &shortmid;
+      <a href="https://x.com/roboteume">Twitter</a>
+    </div>
+  </main>
+</body>
+</html>
